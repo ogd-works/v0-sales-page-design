@@ -5,7 +5,7 @@ import Image from "next/image"
 export function HeroSection() {
   return (
     <>
-      <section className="relative overflow-hidden min-h-screen flex items-center justify-center">
+      <section className="relative overflow-hidden min-h-screen flex items-center justify-center bg-[rgba(0,0,0,0.85)]">
         <div className="absolute inset-0 -z-10">
           <div
             className="absolute inset-0 bg-cover bg-center bg-no-repeat"
@@ -28,7 +28,7 @@ export function HeroSection() {
 
             <div className="mb-8 flex justify-center">
               <Image
-                src="/logo-academia-improvisacao.jpg"
+                src="/images/design-mode/Improvisacao-Aanvacada-LOGO.webp"
                 alt="Academia de Improvisação"
                 width={300}
                 height={100}
@@ -37,15 +37,15 @@ export function HeroSection() {
               />
             </div>
 
-            <h1 className="mb-8 text-balance text-center text-4xl font-extrabold leading-[1.1] tracking-tight md:text-5xl lg:text-6xl xl:text-7xl">
+            <h1 className="mb-8 text-balance text-center text-4xl leading-[1.1] tracking-tight md:text-5xl lg:text-6xl xl:text-7xl font-black text-popover">
               Da vergonha na jam session ao{" "}
-              <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-transparent">
+              <span className="bg-gradient-to-r from-primary to-primary/70 bg-clip-text text-chart-4">
                 aplauso no palco
               </span>
               : o método passo a passo para se tornar um improvisador de alto nível
             </h1>
 
-            <p className="mb-10 text-center text-lg text-muted-foreground md:text-xl lg:text-2xl">
+            <p className="mb-10 text-center text-lg md:text-xl lg:text-2xl text-background">
               Toque com total confiança e desenvolva sua identidade musical autêntica
             </p>
 
@@ -74,11 +74,11 @@ export function HeroSection() {
         <div className="container mx-auto px-4">
           <div className="mx-auto max-w-4xl">
             <div className="rounded-2xl border-2 border-primary/20 bg-card p-8 shadow-xl md:p-10">
-              <h2 className="mb-8 text-center text-2xl font-bold md:text-3xl">
-                Com a Academia de Improvisação, você vai...
+              <h2 className="mb-8 text-center text-2xl font-bold md:text-4xl">
+                É ISSO QUE VAI ACONTECER QUANDO VOCÊ SE JUNTAR AO TOTAL BLUES:<br></br>​
               </h2>
 
-              <div className="grid gap-4 md:grid-cols-2">
+              <div className="grid gap-4">
                 {[
                   "Parar de travar nos solos, mesmo em jams com músicos que você nunca viu na vida.",
                   "Dominar o ritmo e o tempo para criar frases únicas e cheias de personalidade.",
@@ -92,8 +92,8 @@ export function HeroSection() {
                   "Se sentir preparado em qualquer situação musical: de rodas entre amigos até palcos profissionais.",
                 ].map((benefit, index) => (
                   <div key={index} className="flex items-start gap-3 rounded-lg bg-muted/50 p-4">
-                    <CheckCircle2 className="mt-0.5 h-6 w-6 flex-shrink-0 text-primary" />
-                    <p className="text-pretty leading-relaxed">{benefit}</p>
+                    <CheckCircle2 className="mt-0.5 h-6 w-6 flex-shrink-0 text-green-600" />
+                    <p className="text-pretty leading-relaxed text-xl">{benefit}</p>
                   </div>
                 ))}
               </div>

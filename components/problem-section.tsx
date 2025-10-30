@@ -25,7 +25,7 @@ export function ProblemSection() {
   ]
 
   return (
-    <section className="py-20 md:py-32 bg-muted/20">
+    <section className="py-20 md:py-32 bg-background">
       <div className="container mx-auto px-4">
         <div className="mx-auto max-w-4xl">
           <div className="mb-16 text-center">
@@ -33,7 +33,7 @@ export function ProblemSection() {
               <AlertCircle className="h-4 w-4" />O Problema Real
             </div>
             <h2 className="mb-6 text-balance text-3xl font-extrabold leading-tight md:text-5xl lg:text-6xl">
-              Você sente que está sempre tocando as <span className="text-destructive">mesmas frases</span>?
+              Você toca a MESMA pentatônica chata desde 2018 e continua soando igual a 10 mil guitarristas no YouTube? 
             </h2>
             <p className="text-pretty text-lg text-muted-foreground md:text-xl">
               Muitos músicos passam anos estudando, assistindo vídeos e praticando — mas continuam sentindo que estão

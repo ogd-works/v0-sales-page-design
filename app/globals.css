@@ -166,6 +166,7 @@
   --color-sidebar-ring: var(--sidebar-ring);
 
   /* Typography optimized for direct response marketing - high readability */
+  --font-heading: var(--font-sora), ui-sans-serif, system-ui, sans-serif;
   --font-sans: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol",
     "Noto Color Emoji";
   --font-serif: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
@@ -191,6 +192,7 @@
   h5,
   h6 {
     @apply font-bold text-balance;
+    font-family: var(--font-heading);
     line-height: 1.2;
   }
 
@@ -281,10 +283,12 @@
 /* Utility classes for direct response marketing */
 .cta-primary {
   @apply bg-primary text-primary-foreground hover:bg-primary/90 font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 transform hover:scale-105;
+  font-family: var(--font-heading);
 }
 
 .cta-secondary {
   @apply bg-accent text-accent-foreground hover:bg-accent/90 font-bold text-lg px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition-all duration-300;
+  font-family: var(--font-heading);
 }
 
 .badge-urgency {

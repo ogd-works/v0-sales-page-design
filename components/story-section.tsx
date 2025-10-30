@@ -9,7 +9,7 @@ export function StorySection() {
           </div>
 
           <div className="space-y-8">
-            <h2 className="text-balance text-3xl font-bold leading-tight md:text-4xl text-center">
+            <h2 className="text-balance font-bold leading-tight text-center text-6xl">
               De backing tracks ao palco: a minha jornada e a sua solução
             </h2>
 
